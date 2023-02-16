@@ -1,0 +1,35 @@
+    <div class="row pb-5 mb-4">
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <!-- Card-->
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body p-0"><img src="/img/dominik.jpg" alt="" class="w-100 card-img-top">
+                    <div class="p-4">
+                        <h5 class="mb-0 py-2">Dominik Bendrien</h5>
+                        <p class=" text-muted">Country Manager Austria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <!-- Card-->
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body p-0"><img src="/img/anthony.jpg" alt="" class="w-100 card-img-top">
+                    <div class="p-4">
+                        <h5 class="mb-0 py-2">Anthony Yaghi</h5>
+                        <p class=" text-muted">Country Manager France</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <!-- Card-->
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body p-0"><img src="/img/javier.jpg" alt="" class="w-100 card-img-top">
+                    <div class="p-4">
+                        <h5 class="mb-0 py-2">Javier Tur Llobell</h5>
+                        <p class=" text-muted">Country Manager Spain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
