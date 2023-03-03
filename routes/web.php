@@ -47,6 +47,7 @@ $domains = [
     'immobilienbewertung-wuppertal.eu' => [
         'laengengrad' => [1.0, 12.0],
         'breitengrad' => [10.0, 52.0],
+        'domainort' => 'Wuppertal',
     ],
     'baucampus.at' => [
         'laengengrad' => [1.0, 12.0],
@@ -65,7 +66,7 @@ $domains = [
 
 foreach ($domains as $domain => $domainData) {
 Route::domain($domain)->group(function () use ($routes, $domainData) {
-    Route::get('/', function(){
+    Route::get('/', function() use ($domainData) {
         return view('index', ['domainort' => $domainData['domainort']]);
     });
     Route::get('/gutachter/{gutachter}', [GutachterController::class, 'show'], function (Request $request){});
