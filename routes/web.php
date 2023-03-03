@@ -100,7 +100,7 @@ $expert = $data = DB::table('orteat')
 
 
            
-return view($route, ['data' => $data, 'expert' => $expert]);
+return view($route, ['data' => $data, 'expert' => $expert, 'domainort' => $domainData['domainort']]);
 });
 }
 });
