@@ -34,7 +34,8 @@ $routes = [
     'research',
     'show',
     'impressum',
-    'datenschutzerklaerung' ,
+    'datenschutzerklaerung',
+    'starseite',
 ];
 
 $domains = [
