@@ -177,7 +177,7 @@ $domains = [
     'baugutachter-wuerzburg.com' => [
         'laengengrad' => [1.0, 12.0],
         'breitengrad' => [10.0, 52.0],
-        'domainort' => 'Wuerzburg',
+        'domainort' => 'Würzburg',
     ],
     'baugutachter-heilbronn.com' => [
         'laengengrad' => [1.0, 12.0],
