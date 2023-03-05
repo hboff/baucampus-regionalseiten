@@ -52,7 +52,7 @@ $domains = [
     'baugutachter-koeln.com' => [
         'laengengrad' => [1.0, 12.0],
         'breitengrad' => [10.0, 52.0],
-        'domainort' => 'Köln',
+        'domainort' => 'Eisenach',
     ],
     'baugutachter-muenster.eu' => [
         'laengengrad' => [1.0, 12.0],
@@ -254,7 +254,6 @@ Route::domain($domain)->group(function () use ($routes, $domainData) {
     });
     Route::get('/gutachter/{gutachter}', [GutachterController::class, 'show'], function (Request $request){});
     Route::get('/{ort}/bausachverstaendiger', [OrteatController::class, 'show'], function () use ($domainData) {})
-            ->middleware('cache.headers:private;max_age=3600');
     Route::get('/baugutachter/{region}', function($region){
         return view ('baugutachter', ['ortsname' => $region]);
 });
@@ -293,45 +292,3 @@ return view($route, ['data' => $data, 'expert' => $expert, 'domainort' => $domai
 }
 
 
-
-//Route::get('/kontakt', function () {
-//    return view('kontakt');
-//});
-
-//Route::group(['domain' => 'baucampus.at'], function () {
-//Route::get('/startseite', [OrteatController::class, 'startseite']);
-//Route::get('/gutachter', [GutachterController::class, 'index']);
-//Route::get('/{ort}/bausachverstaendiger', [OrteatController::class, 'show'], function (Request $request){});
-//Route::get('/gutachter/{gutachter}', [GutachterController::class, 'show'], function (Request $request){});
-//Route::get('/schimmelpilz', [OrteatController::class, 'schimmelpilz']);
-//Route::get('/hauskaufberatung', [OrteatController::class, 'hauskaufberatung']);
-//Route::get('/baubegleitung', [OrteatController::class, 'baubegleitung']);
-//Route::get('/bauschaden', [OrteatController::class, 'bauschaden']);
-//Route::get('/energieberatung', [OrteatController::class, 'energieberatung']);
-//Route::get('/immobilienbewertung', [OrteatController::class, 'immobilienbewertung']);
-//Route::get('/', [OrteatController::class, 'index']);
-//Route::get('/team', [OrteatController::class, 'team']);
-//Route::get('/gutachter', [OrteatController::class, 'gutachter']);
-//});
-
-
-//   Route::get('/gutachter', [GutachterController::class, 'index']);
-//Route::get('/kontakt', function(){
-//    return view('unterseiten/kontakt');
-//});
-//Route::get('/kosten-preise', function() {
-//    return view('unterseiten/kosten-preise');
-//});
-//Route::get('/research', function() {
-//    return view('unterseiten/research');
-//});
-//Route::get('/show', function(){
-//    return view('orte/show');
-//});
-//Route::get('/impressum', function() {
-//    return view('unterseiten/impressum');
-//});
-//Route::get('/orte/index', function(){
-//    return view('orte/index');
-//});
-//
