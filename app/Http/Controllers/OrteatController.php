@@ -71,7 +71,7 @@ class OrteatController extends Controller
             HAVING distance < 50
             ORDER BY distance
             LIMIT 0 , 16
-        "), [$breite, $laenge, $breite]);
+        "), [$breitengrad, $laengengrad, $breitengrad]);
 
       
         return view('unterseiten.bausachverstaendiger', [
