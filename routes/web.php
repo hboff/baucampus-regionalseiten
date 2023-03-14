@@ -287,3 +287,7 @@ return view($route, ['data' => $data, 'expert' => $expert, 'domainort' => $domai
 }
 
 
+// Route::get('/', function() use ($domainData) {
+
+//    return view('index', ['domainort' => $domainData['domainort']]);
+//});
