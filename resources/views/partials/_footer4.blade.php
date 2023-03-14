@@ -18,6 +18,7 @@ object-position: center;" class="description"><br>
     @if ($region->Country == 'Germany')
     <a class="link-dark" href="/baugutachter/{{$region->Region}}">Baugutachter {{$region->Region}}</a><br>
     @endif
+    @endforeach
                     </p>
                 </div>
                 <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
