@@ -264,8 +264,8 @@ Route::domain($domain)->group(function () use ($routes, $domainData) {
 foreach ($routes as $route) {
 Route::get($route, function () use ($route, $domainData) {
 $data = DB::table('city_data')
-->whereBetween('laengengrad', $domainData['laengengrad'])
-->whereBetween('breitengrad', $domainData['breitengrad'])
+->whereBetween('laenge', $domainData['laengengrad'])
+->whereBetween('breite', $domainData['breitengrad'])
 ->get();
 
 
@@ -278,8 +278,8 @@ $data = DB::table('city_data')
 //HIER DIE WHEREBETWEEEN VON $data in $expert einfügen --> denke ich
 $expert = $data = DB::table('city_data')
            ->join('gutachter', function($join) {
-               $join->on('city_data.laengengrad', '>=', 'gutachter.Lon')
-                    ->on('city_data.laengengrad', '<=', 'gutachter.Lon2');
+               $join->on('city_data.laenge', '>=', 'gutachter.Lon')
+                    ->on('city_data.laenge', '<=', 'gutachter.Lon2');
            })
            ->get();
                   
