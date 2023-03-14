@@ -459,9 +459,10 @@
 <!-- END BLOG ENTRIES -->
 </div>
 
+
 <!-- END GRID -->
 </div><br>
-
+@include('partials._footer3')
 
 <!-- End Footer Section -->
         </main><!-- End #main -->

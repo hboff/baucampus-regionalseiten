@@ -12,15 +12,6 @@
 object-position: center;" class="description"><br>
 
                 </div>
-                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                <p class="description">
-                @foreach($regions as $region)
-    @if ($region->Country == 'Germany')
-    <a class="link-dark" href="/baugutachter/{{$region->Region}}">Baugutachter {{$region->Region}}</a><br>
-    @endif
-    @endforeach
-                    </p>
-                </div>
                 <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                     
                     <p class="description">
@@ -30,7 +21,7 @@ object-position: center;" class="description"><br>
     @endphp
     @foreach($data as $city)
     @if ($i++ < 16)
-    <a class="link-dark" href="/{{$city->ort}}/bausachverstaendiger">Baugutachter{{$city->ort}}</a>
+    <a class="link-dark" href="/{{$city->ort}}/bausachverstaendiger">Baugutachter {{$city->ort}}</a>
     @else
     @endif
     @endforeach
