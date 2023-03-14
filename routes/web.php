@@ -282,11 +282,23 @@ $expert = $data = DB::table('orteat')
            })
            ->get();
 
+$cities = [];
+foreach ($domains as $domain => $coordinates) {
+    $minLatitude = $coordinates['breitengrad'][0];
+    $maxLatitude = $coordinates['breitengrad'][1];
+    $minLongitude = $coordinates['laengengrad'][0];
+    $maxLongitude = $coordinates['laengengrad'][1];
 
-
-
-           
-return view($route, ['data' => $data, 'expert' => $expert, 'domainort' => $domainData['domainort']]);
+    $cities[$domain] = DB::table('city_data')
+        ->select('city')
+        ->whereBetween('breitengrad', [$minLatitude, $maxLatitude])
+        ->whereBetween('laengengrad', [$minLongitude, $maxLongitude])
+        ->get()
+        ->pluck('stadt')
+        ->toArray();
+}
+                  
+return view($route, ['data' => $data, 'expert' => $expert, 'domainort' => $domainData['domainort'], 'cities' => $cities]);
 });
 }
 });

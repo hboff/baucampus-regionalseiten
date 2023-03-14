@@ -462,7 +462,7 @@
 <!-- END GRID -->
 </div><br>
 
-
+@include('patrials._footer4')
 
 <!-- End Footer Section -->
         </main><!-- End #main -->
