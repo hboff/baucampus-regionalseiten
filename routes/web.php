@@ -249,7 +249,9 @@ $domains = [
 
 foreach ($domains as $domain => $domainData) {
 Route::domain($domain)->group(function () use ($routes, $domainData) {
-    Route::get('/', [OrteatController::class, 'index'], function() use ($domainData) {});
+    Route::get('/', function() use ($domainData) {
+        return view('index', ['domainort' => $domainData['domainort']]);
+    });
     Route::get('/gutachter/{gutachter}', [GutachterController::class, 'show'], function (Request $request){});
     Route::get('/{ort}/bausachverstaendiger', [OrteatController::class, 'show'], function () use ($domainData) {})
             ->middleware('cache.headers:private;max_age=3600');
@@ -287,7 +289,6 @@ return view($route, ['data' => $data, 'expert' => $expert, 'domainort' => $domai
 }
 
 
-// Route::get('/', function() use ($domainData) {
-
-//    return view('index', ['domainort' => $domainData['domainort']]);
-//});
+ Route::get('/', function() use ($domainData) {
+    return view('index', ['domainort' => $domainData['domainort']]);
+});
