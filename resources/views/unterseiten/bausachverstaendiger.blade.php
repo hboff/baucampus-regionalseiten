@@ -9,7 +9,8 @@ $footer=1;
 @section('content')
 @if(str_contains(url()->current(), "bausachverstaendiger"))
 @include('partials._sidebar')
-
+@foreach ($ort as $orte)
+@if ($ortsname == $orte->stadt_umlaut)
 <main id="main">
 </br>
 </br>
@@ -18,7 +19,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Hauskaufberatung {{$ortsname}}</h2>
+          <h2>Hauskaufberatung {{$orte->stadt}}</h2>
         </div>
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right">
@@ -45,7 +46,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Baubegleitung {{$ortsname}}</h2>
+          <h2>Baubegleitung {{$orte->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -74,7 +75,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Energieberatung {{$ortsname}}</h2>
+          <h2>Energieberatung {{$orte->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -102,7 +103,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Schimmelpilz {{$ortsname}}</h2>
+          <h2>Schimmelpilz {{$orte->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -127,7 +128,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Bauschaden {{$ortsname}}</h2>
+          <h2>Bauschaden {{$orte->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -159,7 +160,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Hauskaufberatung {{$ortsname}}</h2>
+          <h2>Hauskaufberatung {{$orte->stadt}}</h2>
         </div>
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right">
@@ -186,7 +187,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Baubegleitung {{$ortsname}}</h2>
+          <h2>Baubegleitung {{$orte->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -215,7 +216,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Energieberatung {{$ortsname}}</h2>
+          <h2>Energieberatung {{$orte->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -243,7 +244,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Schimmelpilz {{$ortsname}}</h2>
+          <h2>Schimmelpilz {{$orte->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -268,7 +269,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Bauschaden {{$ortsname}}</h2>
+          <h2>Bauschaden {{$orte->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -291,6 +292,8 @@ $footer=1;
 
 <!-- END GRID -->
 </div><br>
+@endif
+@endforeach
 @endif
 @endsection
 
