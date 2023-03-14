@@ -266,6 +266,7 @@ Route::get($route, function () use ($route, $domainData) {
 $data = DB::table('city_data')
 ->whereBetween('laenge', $domainData['laengengrad'])
 ->whereBetween('breite', $domainData['breitengrad'])
+->limit(16)
 ->get();
 
 

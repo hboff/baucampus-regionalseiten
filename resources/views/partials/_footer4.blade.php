@@ -16,14 +16,11 @@ object-position: center;" class="description"><br>
                     
                     <p class="description">
                         
-    @php
-    $i=0;
-    @endphp
+   
     @foreach($data as $city)
-    @if ($i++ < 16)
+    
     <a class="link-dark" href="/{{$city->ort}}/bausachverstaendiger">Baugutachter {{$city->ort}}</a>
-    @else
-    @endif
+    
     @endforeach
     </p>
 </p>
