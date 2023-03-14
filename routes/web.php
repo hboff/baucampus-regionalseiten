@@ -246,10 +246,10 @@ $domains = [
     ],
 ];
 
-
+Route::get('/', [OrteatController::class, 'index'], function() {});
 foreach ($domains as $domain => $domainData) {
 Route::domain($domain)->group(function () use ($routes, $domainData) {
-    Route::get('/', [OrteatController::class, 'index'], function() use ($domainData) {});
+    
     Route::get('/gutachter/{gutachter}', [GutachterController::class, 'show'], function (Request $request){});
     Route::get('/{ort}/bausachverstaendiger', [OrteatController::class, 'show'], function () use ($domainData) {})
             ->middleware('cache.headers:private;max_age=3600');
