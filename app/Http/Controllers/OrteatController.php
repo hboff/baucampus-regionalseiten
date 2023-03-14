@@ -53,7 +53,7 @@ class OrteatController extends Controller
                  })
                  ->get();
         
-        $cityData = DB::table('city_data')->select('leange', 'breite')->where('stadt', $ortat)->first();
+        $cityData = DB::table('city_data')->select('laenge', 'breite')->where('stadt', $ortat)->first();
         $laengengrad = $cityData->laengengrad;
         $breitengrad = $cityData->breitengrad;
 
