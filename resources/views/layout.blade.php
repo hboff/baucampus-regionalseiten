@@ -342,16 +342,8 @@
 
 
     @yield('content')
-    @include('partials._contact')
-    @if(str_contains(url()->current(), "bausachverstaendiger"))
-    @include('partials._footer1')
-@else
-@if(str_contains(url()->current(), "baugutachter"))
-@include('partials._footer3')
-@else
-@include('partials._footer2')
-@endif
-@endif
+    @include('partials._footer4')
+
 <!-- End Footer Section -->
         </main><!-- End #main -->
 

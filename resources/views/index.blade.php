@@ -462,7 +462,6 @@
 <!-- END GRID -->
 </div><br>
 
-@include('partials._footer4')
 
 <!-- End Footer Section -->
         </main><!-- End #main -->
