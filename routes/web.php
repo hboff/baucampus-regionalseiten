@@ -276,7 +276,7 @@ $data = DB::table('city_data')
 //The result of the join is a single table that includes all columns from both the orteat and gutachter tables. The columns from the orteat table will have the same values for each row, while the name column from the gutachter table will have different values for each row, depending on the matching breitengrad value.
 
 //HIER DIE WHEREBETWEEEN VON $data in $expert einfügen --> denke ich
-$expert = $data = DB::table('city_data')
+$expert = DB::table('city_data')
            ->join('gutachter', function($join) {
                $join->on('city_data.laenge', '>=', 'gutachter.Lon')
                     ->on('city_data.laenge', '<=', 'gutachter.Lon2');
