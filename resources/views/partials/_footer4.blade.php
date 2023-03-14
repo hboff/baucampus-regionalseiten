@@ -15,7 +15,9 @@ object-position: center;" class="description"><br>
                 <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                     
                     <p class="description">
-                        
+                @php
+                $i=0;
+                @endphp        
    
     @foreach($data as $cities)
     @if ($i++ < 16)
