@@ -271,6 +271,6 @@ class OrteatController extends Controller
             'data' => $data,
             'ortsname'=> $ortat,
             ]);    }  
-    }
+    
     
 }
