@@ -250,7 +250,22 @@ $domains = [
 foreach ($domains as $domain => $domainData) {
 Route::domain($domain)->group(function () use ($routes, $domainData) {
     Route::get('/', function() use ($domainData) {
-        return view('index', ['domainort' => $domainData['domainort']]);
+        $cities = [];
+foreach ($domains as $domain => $coordinates) {
+    $minLatitude = $coordinates['breitengrad'][0];
+    $maxLatitude = $coordinates['breitengrad'][1];
+    $minLongitude = $coordinates['laengengrad'][0];
+    $maxLongitude = $coordinates['laengengrad'][1];
+
+    $cities[$domain] = DB::table('city_data')
+        ->select('city')
+        ->whereBetween('breitengrad', [$minLatitude, $maxLatitude])
+        ->whereBetween('laengengrad', [$minLongitude, $maxLongitude])
+        ->get()
+        ->pluck('stadt')
+        ->toArray();
+}
+        return view('index', ['domainort' => $domainData['domainort'], 'cities' => $cities]);
     });
     Route::get('/gutachter/{gutachter}', [GutachterController::class, 'show'], function (Request $request){});
     Route::get('/{ort}/bausachverstaendiger', [OrteatController::class, 'show'], function () use ($domainData) {})
