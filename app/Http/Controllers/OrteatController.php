@@ -41,24 +41,24 @@ class OrteatController extends Controller
         
         foreach ($domains as $domain => $domainData) {
      
-        $data = DB::table('orteat')
-        ->whereBetween('laengengrad', $domainData['laengengrad'])
-        ->whereBetween('breitengrad', $domainData['breitengrad'])
+        $data = DB::table('city_data')
+        ->whereBetween('laenge', $domainData['laengengrad'])
+        ->whereBetween('breite', $domainData['breitengrad'])
         ->get();
       
-        $expert = DB::table('orteat')
+        $expert = DB::table('city_data')
                  ->join('gutachter', function($join) {
-                     $join->on('orteat.laengengrad', '>=', 'gutachter.Lon')
-                          ->on('orteat.laengengrad', '<=', 'gutachter.Lon2');
+                     $join->on('city_data.laenge', '>=', 'gutachter.Lon')
+                          ->on('city_data.laenge', '<=', 'gutachter.Lon2');
                  })
                  ->get();
         
-        $cityData = DB::table('orteat')->select('laengengrad', 'breitengrad')->where('ort', $ortat)->first();
+        $cityData = DB::table('city_data')->select('leange', 'breite')->where('stadt', $ortat)->first();
         $laengengrad = $cityData->laengengrad;
         $breitengrad = $cityData->breitengrad;
 
         $nearestCities = DB::select(DB::raw("
-            SELECT ort, (
+            SELECT stadt, (
                 3959 * acos (
                     cos ( radians(?) )
                     * cos( radians( breitengrad ) )
@@ -67,7 +67,7 @@ class OrteatController extends Controller
                     * sin( radians( breitengrad ) )
                 )
             ) AS distance
-            FROM orteat
+            FROM city_data
             HAVING distance < 50
             ORDER BY distance
             LIMIT 0 , 16
