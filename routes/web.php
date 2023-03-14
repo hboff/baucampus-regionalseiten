@@ -40,8 +40,8 @@ $routes = [
 
 $domains = [
     'baugutachter-sylt.com' => [
-        'laengengrad' => [1.0, 12.0],
-        'breitengrad' => [10.0, 52.0],
+        'laengengrad' => [7.0, 9.0],
+        'breitengrad' => [51.0, 55.0],
         'domainort' => 'Sylt',
     ],
     'baugutachter-eisenach.com ' => [
