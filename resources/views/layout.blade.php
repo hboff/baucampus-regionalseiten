@@ -1,9 +1,3 @@
-@php
-    // Set the memory limit to 256MB
-    ini_set('memory_limit', '900M');
-@endphp
-
-
 <!DOCTYPE html>
 <html lang="de">
 

@@ -17,10 +17,11 @@ object-position: center;" class="description"><br>
                     <p class="description">
                         
    
-    @foreach($data as $city)
-    
-    <a class="link-dark" href="/{{$city->ort}}/bausachverstaendiger">Baugutachter {{$city->ort}}</a>
-    
+    @foreach($data as $cities)
+    @if ($i++ < 16)
+    <a class="link-dark" href="/{{$cities->ort}}/bausachverstaendiger">Baugutachter {{$cities->ort}}</a>
+    @else
+    @endif
     @endforeach
     </p>
 </p>
