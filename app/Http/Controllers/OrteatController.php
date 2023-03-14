@@ -493,7 +493,7 @@ class OrteatController extends Controller
         return view ('index', [
             'expert' => $expert,
             'data' => $data,
-            'ortsname'=> $ortat,
+            'domainort' => $domainData['domainort']
             ]);    }  
     }
     
