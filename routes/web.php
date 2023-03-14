@@ -50,8 +50,8 @@ $domains = [
         'domainort' => 'Eisenach',
     ],
     'baugutachter-koeln.com' => [
-        'laengengrad' => [1.0, 12.0],
-        'breitengrad' => [10.0, 52.0],
+        'laengengrad' => [6.6, 7.4],
+        'breitengrad' => [50.8, 51.0],
         'domainort' => 'Eisenach',
     ],
     'baugutachter-muenster.eu' => [
