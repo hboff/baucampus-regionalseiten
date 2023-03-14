@@ -13,7 +13,7 @@ $p = 0;
 @foreach ($expert as $row)
 
 @if ($p++ < 2)
-@if ($domainort == $row->ort)
+@if ($domainort == $row->stadt)
   <div class="profile">
     <img src="/img/{{$row->Photo}}" alt="" class="mt-4" style="    vertical-align: middle;
 width: 180px;
