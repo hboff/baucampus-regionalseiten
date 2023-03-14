@@ -61,17 +61,17 @@ class OrteatController extends Controller
             SELECT stadt, (
                 3959 * acos (
                     cos ( radians(?) )
-                    * cos( radians( breitengrad ) )
-                    * cos( radians( laengengrad ) - radians(?) )
+                    * cos( radians( breite ) )
+                    * cos( radians( laenge ) - radians(?) )
                     + sin ( radians(?) )
-                    * sin( radians( breitengrad ) )
+                    * sin( radians( breite ) )
                 )
             ) AS distance
             FROM city_data
             HAVING distance < 50
             ORDER BY distance
             LIMIT 0 , 16
-        "), [$breitengrad, $laengengrad, $breitengrad]);
+        "), [$breite, $laenge, $breite]);
 
       
         return view('unterseiten.bausachverstaendiger', [
