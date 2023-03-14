@@ -23,7 +23,7 @@
     @php
         $contact=2;
     @endphp
-    <title>Baugutchter {{$domainort}}</title>
+    <title>Baugutachter {{$domainort}}</title>
 <meta name="Description" content="Baugutachter {{$domainort}}">
     <style>
         .osk-custom {
