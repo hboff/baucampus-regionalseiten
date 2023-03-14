@@ -54,8 +54,8 @@ class OrteatController extends Controller
                  ->get();
         
         $cityData = DB::table('city_data')->select('laenge', 'breite')->where('stadt', $ortat)->first();
-        $laengengrad = $cityData->laengengrad;
-        $breitengrad = $cityData->breitengrad;
+        $laengengrad = $cityData->laenge;
+        $breitengrad = $cityData->breite;
 
         $nearestCities = DB::select(DB::raw("
             SELECT stadt, (
