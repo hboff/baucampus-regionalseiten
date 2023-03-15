@@ -3,14 +3,14 @@
 $footer=1;
 @endphp
 @section('head')
-<title>Bausachverständiger {{$ortsname}}</title>
+@foreach($ort as $city)
+@if ($ortsname == $city->stadt_umlaut)
+<title>Bausachverständiger {{$city->stadt}}</title>
 <meta name="Description" content="Unsere Leistungen in {{$ortsname}}.">
 @endsection
 @section('content')
 @if(str_contains(url()->current(), "bausachverstaendiger"))
 @include('partials._sidebar')
-@foreach($ort as $city)
-@if ($ortsname == $city->stadt_umlaut)
 <main id="main">
 </br>
 </br>
@@ -151,8 +151,7 @@ $footer=1;
 
 <!-- END GRID -->
 </div><br>
-@endif
-@endforeach
+
 @else
 
 </br>
@@ -296,5 +295,7 @@ $footer=1;
 </div><br>
 
 @endif
+@endif
+@endforeach
 @endsection
 
