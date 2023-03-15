@@ -9,7 +9,7 @@ $footer=1;
 @section('content')
 @if(str_contains(url()->current(), "bausachverstaendiger"))
 @include('partials._sidebar')
-@foreach($data as $city)
+@foreach($ort as $city)
 @if ($ortsname == $city->stadt_umlaut)
 <main id="main">
 </br>
