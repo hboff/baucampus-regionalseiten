@@ -26,7 +26,7 @@ object-position: center;" class="description"><br>
 @else
 @foreach ($ort as $orts)
 @if($orts->stadt_umlaut == $cities->stadt_umlaut)
-<a href="/{{$cities->stadt_umlaut}}/bausachverstaendiger" class="link-dark">Baugutachter {{$ort->stadt}}</a>
+<a href="/{{$cities->stadt_umlaut}}/bausachverstaendiger" class="link-dark">Baugutachter {{$orts->stadt}}</a>
 @endif
 @endforeach
 @endif
