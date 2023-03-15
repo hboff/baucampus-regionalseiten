@@ -477,16 +477,18 @@ class OrteatController extends Controller
     foreach ($domains as $domain => $domainData) {
      
         DB::table('city_data')
-        ->select('stadt', 'einwohner', 'laenge', 'breite')
-        ->whereBetween('laenge', $domainData['laengengrad'])
-        ->whereBetween('breite', $domainData['breitengrad'])
-        ->orderBy('einwohner')
-        ->limit(16)
-        ->chunk(100, function ($data) use (&$results) {
-            foreach ($data as $item) {
-                $results[] = $item;
-            }
-        });
+    ->select('stadt', 'einwohner', 'laenge', 'breite')
+    ->whereBetween('laenge', $domainData['laengengrad'])
+    ->whereBetween('breite', $domainData['breitengrad'])
+    ->orderBy('einwohner')
+    ->offset(0)
+    ->limit(16)
+    ->cursor()
+    ->chunk(100, function ($data) use (&$results) {
+        foreach ($data as $item) {
+            $results[] = $item;
+        }
+    });
 
         $expert = DB::table('city_data')
                  ->join('gutachter', function($join) {
