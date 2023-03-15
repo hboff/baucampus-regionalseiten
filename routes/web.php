@@ -254,6 +254,13 @@ Route::domain($domain)->group(function () use ($routes, $domainData) {
                     ->whereBetween('laenge', $domainData['laengengrad'])
                     ->whereBetween('breite', $domainData['breitengrad'])
                     ->get();
+                    
+                    $expert = DB::table('city_data')
+                    ->join('gutachter', function($join) {
+                        $join->on('city_data.laenge', '>=', 'gutachter.Lon')
+                             ->on('city_data.laenge', '<=', 'gutachter.Lon2');
+                    })
+                    ->get();
         View::share('results', $results);
         return view('index', ['domainort' => $domainData['domainort']]);
     });
