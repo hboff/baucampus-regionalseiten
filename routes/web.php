@@ -263,7 +263,7 @@ Route::domain($domain)->group(function () use ($routes, $domainData) {
                          ->on('city_data.breite', '<=', 'gutachter.Lat2');
                     })
                     ->get();
-        View::share('results', $data);
+        View::share('data', $data);
         return view('index', ['expert' => $expert,'domainort' => $domainData['domainort']]);
     });
     Route::get('/gutachter/{gutachter}', [GutachterController::class, 'show'], function (Request $request){});
