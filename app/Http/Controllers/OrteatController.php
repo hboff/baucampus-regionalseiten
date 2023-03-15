@@ -478,11 +478,8 @@ class OrteatController extends Controller
      
         DB::table('city_data')
     ->select('stadt', 'einwohner', 'laenge', 'breite')
-    ->where('laenge', '>', $domainData['laengengrad'][0])
-->where('laenge', '<', $domainData['laengengrad'][1])
-->where('breite', '>', $domainData['breitengrad'][0])
-->where('breite', '<', $domainData['breitengrad'][1])
-
+    ->whereBetween('laenge', $domainData['laengengrad'])
+    ->whereBetween('breite', $domainData['breitengrad'])
     ->orderBy('einwohner')
     ->offset(0)
     ->limit(16)
