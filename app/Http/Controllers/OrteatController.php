@@ -237,7 +237,7 @@ class OrteatController extends Controller
                  })
                  ->get();
         
-        $cityData = DB::table('city_data')->select('laenge', 'breite')->where('stadt_umlaut', $ortat)->first();
+        $cityData = DB::table('city_data')->select('laenge', 'breite')->where('stadt', $ortat)->first();
         $laengengrad = $cityData->laenge;
         $breitengrad = $cityData->breite;
 
@@ -256,7 +256,7 @@ class OrteatController extends Controller
             ORDER BY distance
             LIMIT 0 , 16
         "), [$breitengrad, $laengengrad, $breitengrad]);
-        $nearestCities = collect($nearestCities)->unique('stadt_umlaut')->values()->all();
+        
       
         return view('unterseiten.bausachverstaendiger', [
             'nearestCities' => $nearestCities,
