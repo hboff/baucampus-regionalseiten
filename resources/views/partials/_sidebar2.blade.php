@@ -12,9 +12,7 @@ $p = 0;
 
 @foreach ($expert as $row)
 {{$row->stadt}}
-@else
-<div class='mt-1'></div>
-@endif
+
 
 @endforeach
 @endisset
