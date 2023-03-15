@@ -19,7 +19,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Hauskaufberatung</h2>
+          <h2>Hauskaufberatung {{$city->stadt}}</h2>
         </div>
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right">
