@@ -46,7 +46,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Baubegleitung {{$ortsname}}</h2>
+          <h2>Baubegleitung {{$city->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -75,7 +75,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Energieberatung {{$ortsname}}</h2>
+          <h2>Energieberatung {{$city->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -103,7 +103,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Schimmelpilz {{$ortsname}}</h2>
+          <h2>Schimmelpilz {{$city->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -128,7 +128,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Bauschaden {{$ortsname}}</h2>
+          <h2>Bauschaden {{$city->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -160,7 +160,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Hauskaufberatung {{$ortsname}}</h2>
+          <h2>Hauskaufberatung {{$city->stadt}}</h2>
         </div>
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right">
@@ -187,7 +187,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Baubegleitung {{$ortsname}}</h2>
+          <h2>Baubegleitung {{$city->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -216,7 +216,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Energieberatung {{$ortsname}}</h2>
+          <h2>Energieberatung {{$city->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -244,7 +244,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Schimmelpilz {{$ortsname}}</h2>
+          <h2>Schimmelpilz {{$city->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -269,7 +269,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Bauschaden {{$ortsname}}</h2>
+          <h2>Bauschaden {{$city->stadt}}</h2>
         </div>
 
         <div class="row">
