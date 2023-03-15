@@ -256,7 +256,7 @@ class OrteatController extends Controller
             ORDER BY distance
             LIMIT 0 , 16
         "), [$breitengrad, $laengengrad, $breitengrad]);
-        
+        $nearestCities = collect($nearestCities)->unique('stadt_umlaut')->values()->all();
       
         return view('unterseiten.bausachverstaendiger', [
             'nearestCities' => $nearestCities,
