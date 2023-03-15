@@ -235,7 +235,7 @@ class OrteatController extends Controller
                      $join->on('city_data.laenge', '>=', 'gutachter.Lon')
                           ->on('city_data.laenge', '<=', 'gutachter.Lon2')
                           ->on('city_data.breite', '>=', 'gutachter.Lat')
-                         ->on('city_data.breite', '<=', 'gutachter.Lat2');;
+                         ->on('city_data.breite', '<=', 'gutachter.Lat2');
                  })
                  ->get();
         
