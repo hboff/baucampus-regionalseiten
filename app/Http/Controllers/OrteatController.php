@@ -483,7 +483,6 @@ class OrteatController extends Controller
     ->orderBy('einwohner')
     ->offset(0)
     ->limit(16)
-    ->cursor()
     ->chunk(100, function ($data) use (&$results) {
         foreach ($data as $item) {
             $results[] = $item;
