@@ -21,8 +21,8 @@ object-position: center;" class="description"><br>
 
 @isset($ortsname)
 @isset ($nearestCities)
-@foreach ($nearestCities as $city)
-@if($ortsname == $city->stadt_umlaut)
+@foreach ($nearestCities as $cites)
+@if($ortsname == $cites->stadt_umlaut)
 @else
 <a href="/{{$city->stadt_umlaut}}/bausachverstaendiger" class="link-dark">Baugutachter {{$city->stadt}}</a>
 @endif
