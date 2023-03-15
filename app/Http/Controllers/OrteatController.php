@@ -252,7 +252,7 @@ class OrteatController extends Controller
             * sin( radians( breite ) )
         )
     ) AS distance
-    FROM city_data
+    FROM city
     HAVING distance < 50
     ORDER BY distance
     LIMIT 0 , 16
