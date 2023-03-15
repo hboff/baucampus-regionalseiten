@@ -483,12 +483,11 @@ class OrteatController extends Controller
                 ->get();
     
             $expertData[] = DB::table('city_data')
-                ->join('gutachter', function($join) use ($domainData) {
-                    $join->on('city_data.laenge', '>=', 'gutachter.Lon')
-                        ->on('city_data.laenge', '<=', 'gutachter.Lon2')
-                        ->where('gutachter.domainort', $domainData['domainort']);
-                })
-                ->get();
+            ->join('gutachter', function($join) {
+                $join->on('city_data.laenge', '>=', 'gutachter.Lon')
+                     ->on('city_data.laenge', '<=', 'gutachter.Lon2');
+            })
+            ->get();
         }
     
         return view ('index', [
