@@ -11,9 +11,9 @@ $p = 0;
 @isset($expert)
 
 @foreach ($expert as $row)
-{{$row->LastName}}
-{{$row->stadt}}
 
+{{$row->LastName}}
+{{$row->stadt_umlaut}}
 
 @endforeach
 @endisset
