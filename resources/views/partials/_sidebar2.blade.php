@@ -27,8 +27,8 @@ object-position: center;">
   </div>
 @else
 <div class='mt-1'></div>
-
 @endif
+
 @endforeach
 @endisset
 @endisset

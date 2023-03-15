@@ -255,12 +255,13 @@ Route::domain($domain)->group(function () use ($routes, $domainData) {
                     ->whereBetween('breite', $domainData['breitengrad'])
                     ->get();
                     
-                    $expert = $results = DB::table('city_data')
-                    ->join('gutachter', function($join) {
+                    $expert = $results = DB::table('gutachter')
+                    ->join('city_data', function($join) use ($domainort) {
                         $join->on('city_data.laenge', '>=', 'gutachter.Lon')
                              ->on('city_data.laenge', '<=', 'gutachter.Lon2')
                              ->on('city_data.breite', '>=', 'gutachter.Lat')
-                         ->on('city_data.breite', '<=', 'gutachter.Lat2');
+                             ->on('city_data.breite', '<=', 'gutachter.Lat2')
+                             ->where('city_data.stadt', '=', $domainort);
                     })
                     ->get();
         View::share('results', $results);
