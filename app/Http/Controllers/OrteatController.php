@@ -474,26 +474,26 @@ class OrteatController extends Controller
             ],
         ];
     
-    foreach ($domains as $domain => $domainData) {
-     
-        $data = DB::table('city_data')
-        ->whereBetween('laenge', $domainData['laengengrad'])
-        ->whereBetween('breite', $domainData['breitengrad'])
-        ->get();
-      
-        $expert = DB::table('city_data')
-                 ->join('gutachter', function($join) {
-                     $join->on('city_data.laenge', '>=', 'gutachter.Lon')
-                          ->on('city_data.laenge', '<=', 'gutachter.Lon2');
-                 })
-                 ->get();
-        
-
-        return view ('index', [
-            'expert' => $expert,
-            'data' => $data,
-            'domainort' => $domainData['domainort'],
-            ]);    }  
-    }
+        $expertData = [];
+        $cityData = [];
+        foreach ($domains as $domain => $domainData) {
+            $cityData[] = DB::table('city_data')
+                ->whereBetween('laenge', $domainData['laengengrad'])
+                ->whereBetween('breite', $domainData['breitengrad'])
+                ->get();
     
+            $expertData[] = DB::table('city_data')
+                ->join('gutachter', function($join) use ($domainData) {
+                    $join->on('city_data.laenge', '>=', 'gutachter.Lon')
+                        ->on('city_data.laenge', '<=', 'gutachter.Lon2')
+                        ->where('gutachter.domainort', $domainData['domainort']);
+                })
+                ->get();
+        }
+    
+        return view ('index', [
+            'expert' => $expertData,
+            'data' => $cityData,
+        ]);
+    }
 }
