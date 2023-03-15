@@ -228,7 +228,6 @@ class OrteatController extends Controller
         $data = DB::table('city_data')
         ->whereBetween('laenge', $domainData['laengengrad'])
         ->whereBetween('breite', $domainData['breitengrad'])
-        ->limit(16)
         ->get();
       
         $expert = DB::table('city_data')

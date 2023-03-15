@@ -342,7 +342,11 @@
 
 
     @yield('content')
+    @if(str_contains(url()->current(), "/bausachverstaendiger"))
+    @include('partials._footer1')
+    @else
     @include('partials._footer4')
+    @endif
 
 <!-- End Footer Section -->
         </main><!-- End #main -->
