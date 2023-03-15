@@ -15,7 +15,7 @@ object-position: center;" class="description"><br>
                 
                 
                 
-                <div class="col-lg-3 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                 <p class="description">
     
 
@@ -24,9 +24,7 @@ object-position: center;" class="description"><br>
 @foreach ($nearestCities as $cities)
 @if($ortsname == $cities->stadt_umlaut)
 @else
-
 <a href="/{{$cities->stadt_umlaut}}/bausachverstaendiger" class="link-dark">Baugutachter {{$cities->stadt_umlaut}}</a>
-
 @endif
 @endforeach
 @endisset
