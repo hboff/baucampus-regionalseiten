@@ -11,7 +11,7 @@ $p = 0;
 @isset($expert)
 
 @foreach ($expert as $row)
-@if ($ortsname == $row->stadt)
+@if ($ortsname == $row->stadt_umlaut)
   
 @if ($p++ < 2)
 <div class="profile">
