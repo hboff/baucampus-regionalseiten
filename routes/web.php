@@ -262,7 +262,7 @@ Route::domain($domain)->group(function () use ($routes, $domainData) {
                     })
                     ->get();
         View::share('results', $results);
-        return view('index', ['domainort' => $domainData['domainort']]);
+        return view('index', ['expert' => $expert,'domainort' => $domainData['domainort']]);
     });
     Route::get('/gutachter/{gutachter}', [GutachterController::class, 'show'], function (Request $request){});
     Route::get('/{ort}/bausachverstaendiger', [OrteatController::class, 'show'], function () use ($domainData) {})
