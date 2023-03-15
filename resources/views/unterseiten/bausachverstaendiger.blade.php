@@ -151,6 +151,8 @@ $footer=1;
 
 <!-- END GRID -->
 </div><br>
+@endif
+@endforeach
 @else
 
 </br>
@@ -292,8 +294,7 @@ $footer=1;
 
 <!-- END GRID -->
 </div><br>
-@endif
-@endforeach
+
 @endif
 @endsection
 
