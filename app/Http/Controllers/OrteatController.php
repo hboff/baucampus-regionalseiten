@@ -252,16 +252,10 @@ class OrteatController extends Controller
                 * sin( radians( breite ) )
             )
         ) AS distance
-        FROM city_data
-        WHERE stadt_umlaut NOT IN (
-            SELECT stadt_umlaut
-            FROM city_data
-            WHERE stadt_umlaut IS NOT NULL
-            AND stadt_umlaut != ''
-            GROUP BY stadt_umlaut
-            HAVING COUNT(*) > 1
-        )
+        FROM city
+        WHERE stadt_umlaut IS NOT NULL
         HAVING distance < 50
+        GROUP BY stadt_umlaut
         ORDER BY distance
         LIMIT 0 , 16
     "), [$breitengrad, $laengengrad, $breitengrad]);
