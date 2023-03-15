@@ -46,7 +46,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Baubegleitung </h2>
+          <h2>Baubegleitung {{$city->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -75,7 +75,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Energieberatung </h2>
+          <h2>Energieberatung {{$city->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -103,7 +103,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Schimmelpilz</h2>
+          <h2>Schimmelpilz {{$city->stadt}}</h2>
         </div>
 
         <div class="row">
@@ -128,7 +128,7 @@ $footer=1;
       <div class="container">
 
         <div class="section-title">
-          <h2>Bauschaden</h2>
+          <h2>Bauschaden {{$city->stadt}}</h2>
         </div>
 
         <div class="row">
