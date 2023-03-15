@@ -11,7 +11,7 @@ $p = 0;
 @isset($expert)
 
 @foreach ($expert as $row)
-@if($domainname == $row->stadt)
+@if($domainort == $row->stadt)
 @if ($p++ < 2)
 
   <div class="profile">
