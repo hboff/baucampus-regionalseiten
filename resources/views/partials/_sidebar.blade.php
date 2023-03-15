@@ -11,10 +11,10 @@ $p = 0;
 @isset($expert)
 
 @foreach ($expert as $row)
-
-@if ($p++ < 2)
 @if ($ortsname == $row->stadt)
-  <div class="profile">
+  
+@if ($p++ < 2)
+<div class="profile">
     <img src="/img/{{$row->Photo}}" alt="" class="mt-4" style="    vertical-align: middle;
 width: 180px;
 height: 180px;
