@@ -12,19 +12,24 @@
 object-position: center;" class="description"><br>
 
                 </div>
-                <p class="description">
+                <<div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                    
+                    <p class="description">
                 @php
                 $i=0;
                 @endphp        
    
-    @foreach($results as $cities)
+    @foreach($data as $cities)
     @if ($i++ < 16)
     <a class="link-dark" href="/{{$cities->stadt}}/bausachverstaendiger">Baugutachter {{$cities->stadt}}</a>
     @else
     @endif
     @endforeach
     </p>
+</p>
+                </div>
                 
+ 
 
             </div>
         </div>
