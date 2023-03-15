@@ -250,12 +250,12 @@ $domains = [
 foreach ($domains as $domain => $domainData) {
 Route::domain($domain)->group(function () use ($routes, $domainData) {
     Route::get('/', function() use ($domainData) {
-        $results = DB::table('city_data')
+        $data = DB::table('city_data')
                     ->whereBetween('laenge', $domainData['laengengrad'])
                     ->whereBetween('breite', $domainData['breitengrad'])
                     ->get();
                     
-                    $expert = $results = DB::table('city_data')
+                    $expert = $data = DB::table('city_data')
                     ->join('gutachter', function($join) {
                         $join->on('city_data.laenge', '>=', 'gutachter.Lon')
                              ->on('city_data.laenge', '<=', 'gutachter.Lon2')
@@ -263,7 +263,7 @@ Route::domain($domain)->group(function () use ($routes, $domainData) {
                          ->on('city_data.breite', '<=', 'gutachter.Lat2');
                     })
                     ->get();
-        View::share('results', $results);
+        View::share('results', $data);
         return view('index', ['expert' => $expert,'domainort' => $domainData['domainort']]);
     });
     Route::get('/gutachter/{gutachter}', [GutachterController::class, 'show'], function (Request $request){});
