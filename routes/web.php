@@ -260,7 +260,7 @@ Route::domain($domain)->group(function () use ($routes, $domainData) {
                         $join->on('city_data.laenge', '>=', 'gutachter.Lon')
                              ->on('city_data.laenge', '<=', 'gutachter.Lon2')
                              ->on('city_data.breite', '>=', 'gutachter.Lat')
-                         ->on('city_data.breite', '<=', 'gutachter.Lat2');;
+                         ->on('city_data.breite', '<=', 'gutachter.Lat2');
                     })
                     ->get();
         View::share('results', $results);
@@ -292,7 +292,9 @@ $data = DB::table('city_data')
 $expert = DB::table('city_data')
            ->join('gutachter', function($join) {
                $join->on('city_data.laenge', '>=', 'gutachter.Lon')
-                    ->on('city_data.laenge', '<=', 'gutachter.Lon2');
+                    ->on('city_data.laenge', '<=', 'gutachter.Lon2')
+                    ->on('city_data.breite', '>=', 'gutachter.Lat')
+                         ->on('city_data.breite', '<=', 'gutachter.Lat2');;
            })
            ->get();
                   
