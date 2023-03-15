@@ -476,7 +476,8 @@ class OrteatController extends Controller
     
     foreach ($domains as $domain => $domainData) {
      
-        $data = DB::table('city_data')
+     DB::table('city_data')
+    ->select('stadt', 'einwohner', 'laenge', 'breite')
     ->whereBetween('laenge', $domainData['laengengrad'])
     ->whereBetween('breite', $domainData['breitengrad'])
     ->orderBy('einwohner')
