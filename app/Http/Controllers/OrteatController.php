@@ -488,12 +488,12 @@ class OrteatController extends Controller
                  })
                  ->get();
         
-}
+
         return view ('index', [
             'expert' => $expert,
             'data' => $data,
             'domainort' => $domainData['domainort'],
-            ]);      
+            ]);    }  
     }
     
 }
