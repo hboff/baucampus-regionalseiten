@@ -11,7 +11,7 @@ $p = 0;
 @isset($expert)
 
 @foreach ($expert as $row)
-
+@if ($p++ < 2)
 
   <div class="profile">
     <img src="/img/{{$row->Photo}}" alt="" class="mt-4" style="    vertical-align: middle;
@@ -25,7 +25,9 @@ object-position: center;">
     <p class="text-light text-center mb-0">{{$row->Phone}}</p>
     <p class="text-light text-center">{{$row->Email}}</p>
   </div>
-
+@else
+<div class='mt-1'></div>
+@endif
 
 @endforeach
 @endisset
