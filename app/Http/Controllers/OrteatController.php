@@ -242,23 +242,21 @@ class OrteatController extends Controller
         $breitengrad = $cityData->breite;
 
         $nearestCities = DB::select(DB::raw("
-        SELECT DISTINCT stadt_umlaut, stadt,
-        (
-            3959 * acos (
-                cos ( radians(?) )
-                * cos( radians( breite ) )
-                * cos( radians( laenge ) - radians(?) )
-                + sin ( radians(?) )
-                * sin( radians( breite ) )
-            )
-        ) AS distance
-        FROM city
-        WHERE stadt_umlaut IS NOT NULL
-        HAVING distance < 50
-        GROUP BY stadt_umlaut
-        ORDER BY distance
-        LIMIT 0 , 16
-    "), [$breitengrad, $laengengrad, $breitengrad]);
+    SELECT DISTINCT stadt_umlaut, stadt,
+    (
+        3959 * acos (
+            cos ( radians(?) )
+            * cos( radians( breite ) )
+            * cos( radians( laenge ) - radians(?) )
+            + sin ( radians(?) )
+            * sin( radians( breite ) )
+        )
+    ) AS distance
+    FROM city
+    HAVING distance < 50
+    ORDER BY distance
+    LIMIT 0 , 16
+"), [$breitengrad, $laengengrad, $breitengrad]);
         
       
         return view('unterseiten.bausachverstaendiger', [
