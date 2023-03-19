@@ -381,7 +381,7 @@
 </div><br>
 
 <!-- ======= About Section ======= -->
-<div id="about" class="about p-5" style="background-color: #E1E5E6;">
+<div id="about" class="about p-5" style="background-color: #E6E6E6;">
       <div class="container">
 
         <div class="section-title">
@@ -434,7 +434,7 @@
 <!-- END GRID -->
 </div><br>
 <!-- ======= About Section ======= -->
-<div id="about" class="about p-5" style="background-color: #E1E5E6;">
+<div id="about" class="about p-5" style="background-color: #E6E6E6;">
       <div class="container">
 
         <div class="section-title">
