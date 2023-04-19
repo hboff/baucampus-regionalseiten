@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="/w3.css">
-    <link rel="stylesheet" type="text/css" href="/style2.css">
-    <link rel="stylesheet" href="/ideen-style.css">
-    <link rel="stylesheet" type="text/css" href="/kontakt-style-neu.css">
+    <meta name="viewport" content="https://baucampus.ch/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://baucampus.ch/style.css">
+    <link rel="stylesheet" href="https://baucampus.ch/ideen-style.css">
+    <link rel="stylesheet" type="text/css" href="https://baucampus.ch/kontakt-style-neu.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href="/style.css" rel="stylesheet">
 
