@@ -236,7 +236,7 @@
 <body>
 
 <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark py-3" style="background: rgb(87,104,121);border-color: rgb(87,104,121);--bs-dark: #414b55;--bs-dark-rgb: 65,75,85;">
-        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="/index"><span data-bss-hover-animate="pulse">Baucampus</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="/"><span data-bss-hover-animate="pulse">Baucampus</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-5">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Leistungen&nbsp;</a>
