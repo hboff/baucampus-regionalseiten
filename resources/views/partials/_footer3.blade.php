@@ -12,7 +12,7 @@
 object-position: center;" class="description"><br>
 
                 </div>
-                <<div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                     
                     <p class="description">
                 @php
