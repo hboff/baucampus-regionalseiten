@@ -233,84 +233,21 @@
 
 <body>
 
-    <div class="w3-top w3-text-white w3-osk-customs">
-
-        <div class="w3-bar w3-text-white" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-left"
-                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                Baucampus
-            </a>
-
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);"
-                onclick="toggleFunction()" title="Toggle Navigation Menu">
-                Nav<i class="fa fa-bars"></i>
-            </a>
-
-            <a href="/" class="w3-hide-small w3-left hover-underline-animation oskkk text-white"
-                style="padding-left:100px;">Baucampus</a>
-            <a href="/kontakt" class=" w3-hide-small w3-hide-medium w3-right hover-underline-animation oskkk text-white"
-                style="padding-right:100px;">Kontakt</a>
-            <a href="/kosten-preise"
-                class=" w3-hide-small w3-hide-medium w3-right hover-underline-animation oskkk text-white">Preise</a>
-
-            <div class="w3-dropdown-hover w3-hide-small w3-hide-medium w3-right ">
-                <a class=" hover-underline-animation oskkk text-white">Über uns &#9207;</a>
-                <div class="w3-dropdown-content w3-bar-block w3-card" style="position:fixed;">
-                    <a href="/gutachter" class="w3-bar-item w3-button" style="font-size:20px;"
-                        title="Gutachter Baucampus">Gutachter</a>
-                    <a href="/research" class="w3-bar-item w3-button" style="font-size:20px;"
-                        title="Marktberichte Baucampus">Marktberichte</a>
-                    <a href="/team" class="w3-bar-item w3-button" style="font-size:20px;"
-                        title="Marktberichte Baucampus">Team</a>
-                    <a href="https://baucampus.com" class="w3-bar-item w3-button" style="font-size:20px;"
-                        title="Marktberichte Baucampus">Partner werden</a>
-
-                </div>
+<nav class="navbar navbar-dark navbar-expand-md bg-dark py-3" style="background: rgb(87,104,121);border-color: rgb(87,104,121);--bs-dark: #414b55;--bs-dark-rgb: 65,75,85;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/index"><span data-bss-hover-animate="pulse">Baucampus</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-5">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" aria-expanded="true" data-bs-toggle="dropdown" href="#">Leistungen&nbsp;</a>
+                        <div class="dropdown-menu show" data-bs-popper="none"><a class="dropdown-item" href="/baubegleitung">Baubegleitung</a><a class="dropdown-item" href="/bauschaden">Bauschaden</a><a class="dropdown-item" href="/energieberatung">Energieberatung</a><a class="dropdown-item" href="/hauskaufberatung">Hauskaufberatung</a><a class="dropdown-item" href="/immobilienbewertung">Immobilienbewertung</a><a class="dropdown-item" href="/schimmelpilz">Schimmelpilz</a></div>
+                    </li>
+                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" aria-expanded="true" data-bs-toggle="dropdown" href="#" style="margin-right: 38px;">Über Uns&nbsp;</a>
+                        <div class="dropdown-menu show" data-bs-popper="none" style="padding-right: 0px;"><a class="dropdown-item" href="/gutachter">Gutachter</a><a class="dropdown-item" href="/research">Marktberichte</a><a class="dropdown-item" href="/team">Team</a><a class="dropdown-item" href="https://baucampus.com">Partner werden</a></div>
+                    </li>
+                </ul>
             </div>
-
-
-            <div class="w3-dropdown-hover w3-hide-small w3-hide-medium w3-right ">
-                <a class=" hover-underline-animation oskkk text-white">Leistungen &#9207;</a>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4" style="position:fixed;">
-                    <a href="/baubegleitung" class="w3-bar-item w3-button" style="font-size:20px;"
-                        title="Baubegleitung">Baubegleitung</a>
-                    <a href="/bauschaden" class="w3-bar-item w3-button" style="font-size:20px;"
-                        title="Bauschaden">Bauschaden</a>
-                    <a href="/energieberatung" class="w3-bar-item w3-button" style="font-size:20px;"
-                        title="Energieberatung">Energieberatung</a>
-                    <a href="/hauskaufberatung" class="w3-bar-item w3-button" style="font-size:20px;"
-                        title="Hauskaufberatung">Hauskaufberatung</a>
-                    <a href="/immobilienbewertung" class="w3-bar-item w3-button" style="font-size:20px;"
-                        title="Immobilienbewertung">Immobilienbewertung</a>
-                    <a href="/schimmelpilz" class="w3-bar-item w3-button" style="font-size:20px;"
-                        title="Schimmelpilz">Schimmelpilz</a>
-                </div>
-            </div>
-
         </div>
-
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="/" class="w3-bar-item w3-button" onclick="toggleFunction()">Baucampus</a>
-            <a href="/baubegleitung" title="Baubegleitung" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Baubegleitung</a>
-            <a href="/bauschaden" title="Bauschaden" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Bauschaden</a>
-            <a href="/energieberatung" title="Energieberatung" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Energieberatung</a>
-            <a href="/hauskaufberatung" title="Hauskaufberatung" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Hauskaufberatung</a>
-            <a href="/immobilienbewertung" title="Immobilienbewertung" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Immobilienbewertung</a>
-            <a href="/schimmelpilz" title="Schimmelpilz" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Schimmelpilz</a>
-            <a href="/gutachter" title="Gutachter Baucampus" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Gutachter</a>
-            <a href="/research" title="Marktberichte Baucampus" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Marktberichte</a>
-
-        </div>
-    </div>
+    </nav>
+     
     <script>
         // Change style of navbar on scroll
         window.onscroll = function () {
