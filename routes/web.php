@@ -125,8 +125,8 @@ $domains = [
         'domainort' => 'Ludwigshafen',
     ],
     'baugutachter-muelheim.com' => [
-        'laengengrad' => [1.0, 12.0],
-        'breitengrad' => [10.0, 52.0],
+        'laengengrad' => [6.37, 6.91],
+        'breitengrad' => [51.28, 51.46],
         'domainort' => 'Mülheim',
     ],
     'baugutachter-oldenburg.com' => [
@@ -230,8 +230,8 @@ $domains = [
         'domainort' => 'Trier',
     ],
     'baugutachter-salzgitter.com' => [
-        'laengengrad' => [1.0, 12.0],
-        'breitengrad' => [10.0, 52.0],
+        'laengengrad' => [10.39, 11.24],
+        'breitengrad' => [51.6, 52.18],
         'domainort' => 'Salzgitter',
     ],
     'baugutachter-siegen.com' => [
@@ -284,11 +284,12 @@ $domains = [
         'breitengrad' => [50.5, 50.8],
         'domainort' => 'Bonn',
     ],
-    'baugutachter-neumuenster.eu' => [
-        'laengengrad' => [8.8, 11.3],
-        'breitengrad' => [53.9, 54.3],
-        'domainort' => 'Neumünster',
+    'baugutachter-arnsberg.de' => [
+        'laengengrad' => [7.34, 8.03],
+        'breitengrad' => [51.27, 51.66],
+        'domainort' => 'Arnsberg',
     ],
+    
 ];
 
 
