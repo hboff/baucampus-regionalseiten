@@ -75,8 +75,8 @@ $domains = [
         'domainort' => 'Gelsenkirchen',  
     ],
     'baugutachter-braunschweig.eu' => [
-        'laengengrad' => [1.0, 12.0],
-        'breitengrad' => [10.0, 52.0],
+        'laengengrad' => [10.39, 11.24],
+        'breitengrad' => [51.6, 52.32],
         'domainort' => 'Braunschweig',
     ],
     'baugutachter-chemnitz.com' => [
@@ -105,8 +105,8 @@ $domains = [
         'domainort' => 'Oberhausen',
     ],
     'baugutachter-hagen.com' => [
-        'laengengrad' => [1.0, 12.0],
-        'breitengrad' => [10.0, 52.0],
+        'laengengrad' => [7.34, 7.61],
+        'breitengrad' => [51.27, 51.44],
         'domainort' => 'Hagen',
     ],
     'baugutachter-potsdam.com' => [
@@ -195,8 +195,8 @@ $domains = [
         'domainort' => 'Bottrop',
     ],
     'baugutachter-remscheid.com' => [
-        'laengengrad' => [1.0, 12.0],
-        'breitengrad' => [10.0, 52.0],
+        'laengengrad' => [7.14, 7.61],
+        'breitengrad' => [51.12, 51.22],
         'domainort' => 'Remscheid',
     ],
     'baugutachter-reutlingen.com' => [
@@ -243,6 +243,51 @@ $domains = [
         'laengengrad' => [8.03, 8.63],
         'breitengrad' => [51.66, 51.95],
         'domainort' => 'Gütersloh',
+    ],
+    'baugutachter-kiel.eu' => [
+        'laengengrad' => [8.5, 12],
+        'breitengrad' => [54.13, 55],
+        'domainort' => 'Kiel',
+    ],
+    'baugutachter-bremen.eu' => [
+        'laengengrad' => [9.2, 9.4],
+        'breitengrad' => [52.7, 53.3],
+        'domainort' => 'Bremen',
+    ],
+    'bausachverstaendiger-hannover.eu' => [
+        'laengengrad' => [9.4, 9.75],
+        'breitengrad' => [51.66, 51.95],
+        'domainort' => 'Hannover',
+    ],
+    'baugutachter-frankfurt.eu' => [
+        'laengengrad' => [8.03, 8.63],
+        'breitengrad' => [51.66, 51.95],
+        'domainort' => 'Frankfurt',
+    ],
+    'baugutachter-muenchen.eu' => [
+        'laengengrad' => [8.03, 8.63],
+        'breitengrad' => [51.66, 51.95],
+        'domainort' => 'München',
+    ],
+    'baugutachter-leipzig.eu' => [
+        'laengengrad' => [11.7, 12.7],
+        'breitengrad' => [50.8, 51.5],
+        'domainort' => 'Leipzig',
+    ],
+    'baugutachter-augsburg.eu' => [
+        'laengengrad' => [10.4, 11.3],
+        'breitengrad' => [48.0, 48.9],
+        'domainort' => 'Augsburg',
+    ],
+    'baugutachter-bonn.eu' => [
+        'laengengrad' => [6.8, 7.8],
+        'breitengrad' => [50.5, 50.8],
+        'domainort' => 'Bonn',
+    ],
+    'baugutachter-neumuenster.eu' => [
+        'laengengrad' => [8.8, 11.3],
+        'breitengrad' => [53.9, 54.3],
+        'domainort' => 'Neumünster',
     ],
 ];
 
