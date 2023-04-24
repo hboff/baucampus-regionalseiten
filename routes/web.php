@@ -40,13 +40,13 @@ $routes = [
 
 $domains = [
     'baugutachter-sylt.com' => [
-        'laengengrad' => [1.0, 12.0],
-        'breitengrad' => [10.0, 52.0],
+        'laengengrad' => [8.2, 8.51],
+        'breitengrad' => [54.74, 55.07],
         'domainort' => 'Sylt',
     ],
     'baugutachter-eisenach.com ' => [
-        'laengengrad' => [1.0, 12.0],
-        'breitengrad' => [10.0, 52.0],
+        'laengengrad' => [10.10, 11.25],
+        'breitengrad' => [50.04, 51.15],
         'domainort' => 'Eisenach',
     ],
     'baugutachter-koeln.com' => [
@@ -165,8 +165,8 @@ $domains = [
         'domainort' => 'Ingolstadt',
     ],
     'baugutachter-offenbach.com' => [
-        'laengengrad' => [1.0, 12.0],
-        'breitengrad' => [10.0, 52.0],
+        'laengengrad' => [8.74, 9.0],
+        'breitengrad' => [50.04, 50.4],
         'domainort' => 'Offenbach',
     ],
     'baugutachter-fuerth.com' => [
@@ -260,13 +260,13 @@ $domains = [
         'domainort' => 'Hannover',
     ],
     'baugutachter-frankfurt.eu' => [
-        'laengengrad' => [8.03, 8.63],
-        'breitengrad' => [51.66, 51.95],
+        'laengengrad' => [8.4, 10.1],
+        'breitengrad' => [49.4, 50.4],
         'domainort' => 'Frankfurt',
     ],
     'baugutachter-muenchen.eu' => [
-        'laengengrad' => [8.03, 8.63],
-        'breitengrad' => [51.66, 51.95],
+        'laengengrad' => [10.85, 13.9],
+        'breitengrad' => [47.79, 48.9],
         'domainort' => 'München',
     ],
     'baugutachter-leipzig.eu' => [
