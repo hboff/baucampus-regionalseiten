@@ -234,7 +234,7 @@
 </head>
 
 <body>
-<div class="about">
+<main id="main">
         <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3" style="background: rgb(87,104,121);border-color: rgb(87,104,121);--bs-dark: #414b55;--bs-dark-rgb: 65,75,85;">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/index"><span data-bss-hover-animate="pulse">Baucampus</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-5">
@@ -249,8 +249,7 @@
             </div>
         </div>
     </nav>
-    </div>
-
+    </main>
     <script>
         // Change style of navbar on scroll
         window.onscroll = function () {
