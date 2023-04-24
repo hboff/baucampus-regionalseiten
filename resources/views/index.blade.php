@@ -237,7 +237,8 @@
 
     <div class="w3-top w3-text-white w3-osk-customs">
 
-    <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3" style="background: rgb(87,104,121);border-color: rgb(87,104,121);--bs-dark: #414b55;--bs-dark-rgb: 65,75,85;">
+        <div id="myNavbar">
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3" style="background: rgb(87,104,121);border-color: rgb(87,104,121);--bs-dark: #414b55;--bs-dark-rgb: 65,75,85;">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/index"><span data-bss-hover-animate="pulse">Baucampus</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-5">
                 <ul class="navbar-nav ms-auto">
@@ -253,29 +254,6 @@
     </nav>
             </div>
 
-        </div>
-
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="/" class="w3-bar-item w3-button" onclick="toggleFunction()">Baucampus</a>
-            <a href="/baubegleitung" title="Baubegleitung" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Baubegleitung</a>
-            <a href="/bauschaden" title="Bauschaden" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Bauschaden</a>
-            <a href="/energieberatung" title="Energieberatung" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Energieberatung</a>
-            <a href="/hauskaufberatung" title="Hauskaufberatung" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Hauskaufberatung</a>
-            <a href="/immobilienbewertung" title="Immobilienbewertung" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Immobilienbewertung</a>
-            <a href="/schimmelpilz" title="Schimmelpilz" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Schimmelpilz</a>
-            <a href="/gutachter" title="Gutachter Baucampus" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Gutachter</a>
-            <a href="/research" title="Marktberichte Baucampus" class="w3-bar-item w3-button"
-                onclick="toggleFunction()">Marktberichte</a>
-
-        </div>
     </div>
     <script>
         // Change style of navbar on scroll
