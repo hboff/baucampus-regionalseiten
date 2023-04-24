@@ -232,15 +232,16 @@
 </head>
 
 <body>
-<nav class="navbar navbar-dark navbar-expand-md bg-dark py-3" style="background: rgb(87,104,121);border-color: rgb(87,104,121);--bs-dark: #414b55;--bs-dark-rgb: 65,75,85;">
+
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3" style="background: rgb(87,104,121);border-color: rgb(87,104,121);--bs-dark: #414b55;--bs-dark-rgb: 65,75,85;">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/index"><span data-bss-hover-animate="pulse">Baucampus</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-5">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Leistungen&nbsp;</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="/baubegleitung">Baubegleitung</a><a class="dropdown-item" href="/bauschaden">Bauschaden</a><a class="dropdown-item" href="/energieberatung">Energieberatung</a><a class="dropdown-item" href="/hauskaufberatung">Hauskaufberatung</a><a class="dropdown-item" href="/immobilienbewertung">Immobilienbewertung</a><a class="dropdown-item" href="/schimmelpilz">Schimmelpilz</a></div>
+                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" aria-expanded="true" data-bs-toggle="dropdown" href="#">Leistungen&nbsp;</a>
+                        <div class="dropdown-menu show" data-bs-popper="none"><a class="dropdown-item" href="/baubegleitung">Baubegleitung</a><a class="dropdown-item" href="/bauschaden">Bauschaden</a><a class="dropdown-item" href="/energieberatung">Energieberatung</a><a class="dropdown-item" href="/hauskaufberatung">Hauskaufberatung</a><a class="dropdown-item" href="/immobilienbewertung">Immobilienbewertung</a><a class="dropdown-item" href="/schimmelpilz">Schimmelpilz</a></div>
                     </li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="margin-right: 38px;">Über Uns&nbsp;</a>
-                        <div class="dropdown-menu" style="padding-right: 0px;"><a class="dropdown-item" href="/gutachter">Gutachter</a><a class="dropdown-item" href="/research">Marktberichte</a><a class="dropdown-item" href="/team">Team</a><a class="dropdown-item" href="https://baucampus.com">Partner werden</a></div>
+                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" aria-expanded="true" data-bs-toggle="dropdown" href="#" style="margin-right: 38px;">Über Uns&nbsp;</a>
+                        <div class="dropdown-menu show" data-bs-popper="none" style="padding-right: 0px;"><a class="dropdown-item" href="/gutachter">Gutachter</a><a class="dropdown-item" href="/research">Marktberichte</a><a class="dropdown-item" href="/team">Team</a><a class="dropdown-item" href="https://baucampus.com">Partner werden</a></div>
                     </li>
                 </ul>
             </div>
