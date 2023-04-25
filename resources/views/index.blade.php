@@ -290,7 +290,7 @@
 <!-- END GRID -->
 </div><br>
     <!-- ======= About Section ======= -->
-    <div id="about" class="about mt-5 p-5">
+    <div id="about" class="about  p-5">
       <div class="container">
 
         <div class="section-title">
