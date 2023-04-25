@@ -249,7 +249,7 @@
             </div>
         </div>
     </nav>
-    </nav>
+  
 
     <script>
         // Change style of navbar on scroll
