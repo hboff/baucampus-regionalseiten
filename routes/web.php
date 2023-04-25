@@ -122,7 +122,7 @@ $domains = [
     'baugutachter-ludwigshafen.com' => [
         'laengengrad' => [8.06, 8.4],
         'breitengrad' => [49.06, 49.485],
-        'domainort' => 'Ludwigshafen',
+        'domainort' => 'Ludwigshafen am Rhein',
     ],
     'baugutachter-muelheim.com' => [
         'laengengrad' => [6.37, 6.91],
