@@ -294,6 +294,11 @@ $domains = [
         'breitengrad' => [51.28, 51.87],
         'domainort' => 'Bochum',
     ],
+    'baugutachter-magdeburg.com' => [
+        'laengengrad' => [11.24, 12.01],
+        'breitengrad' => [51.96, 52.32],
+        'domainort' => 'Magdeburg',
+    ],
     
 ];
 
