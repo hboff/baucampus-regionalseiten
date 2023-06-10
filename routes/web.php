@@ -299,6 +299,131 @@ $domains = [
         'breitengrad' => [51.96, 52.32],
         'domainort' => 'Magdeburg',
     ],
+    'baugutachter-bielefeld.com' => [
+        'laengengrad' => [5.0, 8.91],
+        'breitengrad' => [51.87, 52.12],
+        'domainort' => 'Bielefeld',
+    ],
+    'baugutachter-celle.com' => [
+        'laengengrad' => [9.5, 10.39],
+        'breitengrad' => [52.53, 53.3],
+        'domainort' => 'Celle',
+    ],
+    'baugutachter-dortmund.com' => [
+        'laengengrad' => [7.32, 8.45],
+        'breitengrad' => [51.28, 51.87],
+        'domainort' => 'Dortmund',
+    ],
+    'baugutachter-goettingen.com' => [
+        'laengengrad' => [9.72, 11.24],
+        'breitengrad' => [50.8, 51.6],
+        'domainort' => 'Göttingen',
+    ],
+    'baugutachter-hamburg.com' => [
+        'laengengrad' => [9.5, 11.8],
+        'breitengrad' => [53.3, 55.1],
+        'domainort' => 'Hamburg',
+    ],
+    'baugutachter-hildesheim.com' => [
+        'laengengrad' => [9.4, 10.39],
+        'breitengrad' => [51.6, 52.25],
+        'domainort' => 'Hildeshiem',
+    ],
+    'baugutachter-kassel.com' => [
+        'laengengrad' => [9.0, 9.72],
+        'breitengrad' => [50.7, 51.44],
+        'domainort' => 'Kassel',
+    ],
+    'baugutachter-osnabrueck.com' => [
+        'laengengrad' => [5.0, 8.41],
+        'breitengrad' => [51.12, 52.74],
+        'domainort' => 'Osnabrück',
+    ],
+    'baugutachter-paderborn.com' => [
+        'laengengrad' => [8.45, 9.4],
+        'breitengrad' => [51.2, 52.12],
+        'domainort' => 'Paderborn',
+    ],
+    'baugutachter-wolfsburg.com' => [
+        'laengengrad' => [10.39, 11.24],
+        'breitengrad' => [52.32, 52.93],
+        'domainort' => 'Wolfsburg',
+    ],
+    'gutachter-braunschweig.com' => [
+        'laengengrad' => [10.39, 11.24],
+        'breitengrad' => [51.6, 52.32],
+        'domainort' => 'Braunschweig',
+    ],
+    'baugutachter-minden.com' => [
+        'laengengrad' => [5.5, 16.0],
+        'breitengrad' => [47.0, 55.0],
+        'domainort' => 'Minden',
+    ],
+    'bausachverstaendiger-berlin.com' => [
+        'laengengrad' => [12.71, 15.2],
+        'breitengrad' => [51.68, 53.14],
+        'domainort' => 'Berlin',
+    ],
+    'baugutachter-rostock.com' => [
+        'laengengrad' => [12.0, 12.8],
+        'breitengrad' => [53.78, 55.0],
+        'domainort' => 'Rostock',
+    ],
+    'baugutachter-regensburg.com' => [
+        'laengengrad' => [11.4, 12.9],
+        'breitengrad' => [48.9, 49.5],
+        'domainort' => 'Regensburg',
+    ],
+    'baugutachter-ulm.com' => [
+        'laengengrad' => [9.5, 10.4],
+        'breitengrad' => [48.0, 48.9],
+        'domainort' => 'Ulm',
+    ],
+    'baugutachter-passau.com' => [
+        'laengengrad' => [12.8, 13.9],
+        'breitengrad' => [48.3, 49.1],
+        'domainort' => 'Passau',
+    ],
+    'baugutachter-flensburg.com' => [
+        'laengengrad' => [8.0, 11.5],
+        'breitengrad' => [54.3, 55.1],
+        'domainort' => 'Flensburg',
+    ],
+    'baugutachter-neumuenster.com' => [
+        'laengengrad' => [8.8, 11.3],
+        'breitengrad' => [53.9, 54.3],
+        'domainort' => 'Neumünster',
+    ],
+    'baugutachter-luebeck.com' => [
+        'laengengrad' => [10.0, 11.8],
+        'breitengrad' => [53.3, 53.9],
+        'domainort' => 'Lübeck',
+    ],
+    'baugutachter-marburg.com' => [
+        'laengengrad' => [7.7, 9.0],
+        'breitengrad' => [50.4, 50.9],
+        'domainort' => 'Marburg',
+    ],
+    'baugutachter-mainz.com' => [
+        'laengengrad' => [7.7, 8.4],
+        'breitengrad' => [49.4, 50.04],
+        'domainort' => 'Mainz',
+    ],
+    'baugutachter-wiesbaden.com' => [
+        'laengengrad' => [7.7, 8.5],
+        'breitengrad' => [50.04, 50.4],
+        'domainort' => 'Wiesbaden',
+    ],
+    'baugutachter-darmstadt.com' => [
+        'laengengrad' => [8.4, 9.6],
+        'breitengrad' => [49.4, 50.04],
+        'domainort' => 'Darmstadt',
+    ],
+    'baugutachter-fulda.com' => [
+        'laengengrad' => [9.0, 10.1],
+        'breitengrad' => [50.04, 50.7],
+        'domainort' => 'Fulda',
+    ],
     
 ];
 
