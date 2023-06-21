@@ -439,6 +439,11 @@ $domains = [
         'breitengrad' => [47.4, 47.95],
         'domainort' => 'Kaufbeuren',
     ],
+    'baugutachter-kempten.com' => [
+        'laengengrad' => [9.5, 10.4],
+        'breitengrad' => [47.4, 48.0],
+        'domainort' => 'Kempten',
+    ],
     
 ];
 
