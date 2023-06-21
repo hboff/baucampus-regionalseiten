@@ -16,7 +16,7 @@ $footer=2;
         <div>
             <!-- Blog entry -->
 
-            <img src="/img/energieberatung-baucampus-main.png" alt="Energieberatung" title="Energieberatung"
+            <img src="/img/energieberatung-baucampus-main.jpg" alt="Energieberatung" title="Energieberatung"
                 class="pb-5" style="width:100%; height:500px; object-fit: cover; object-position:center;">
 
             <!-- ======= About Section ======= -->
