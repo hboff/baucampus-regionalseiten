@@ -424,6 +424,21 @@ $domains = [
         'breitengrad' => [50.04, 50.7],
         'domainort' => 'Fulda',
     ],
+    'baugutachter-rosenheim.com' => [
+        'laengengrad' => [11.57, 13.9],
+        'breitengrad' => [47.4, 47.95],
+        'domainort' => 'Rosenheim',
+    ],
+    'baugutachter-landshut.com' => [
+        'laengengrad' => [11.78, 13.9],
+        'breitengrad' => [47.4, 47.95],
+        'domainort' => 'Landshut',
+    ],
+    'baugutachter-kaufbeuren.com' => [
+        'laengengrad' => [10.4, 11.57],
+        'breitengrad' => [47.4, 47.95],
+        'domainort' => 'Kaufbeuren',
+    ],
     
 ];
 
