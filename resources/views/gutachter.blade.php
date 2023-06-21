@@ -125,7 +125,7 @@ p+p {
 @section('content') 
 <body class="w3-light-grey">< !-- Grid --><div class="w3-row">
     <div><div id="about"class="about pt-5 mt-5"><div class="container pt-5"><div class="section-title"><h1>Gutachter</h1><p class="subheading-text w3-center">Unsere Bausachverständigen</p></div><table><tr><th>Gutachter</th><th></th><th>Anschrift</th><th>Kontakt</th></tr>@foreach($gutachter as $gutachters)
-    @if($gutachters->ID != 16 && $gutachters->ID != 17)
+    @if($gutachters->ID != 15 && $gutachters->ID != 16)
     <tr><td><a href="/gutachter/{{ $gutachters['UrlName'] }}"
 class="link-dark"target="_blank"><img src="/img/{{ $gutachters['Photo'] }}"
 style="vertical-align: middle; width: 100px; height: 100px; border-radius: 50%; object-fit: cover; object-position: center;"></a></td><td><a href="/gutachter/{{ $gutachters['UrlName'] }}"
