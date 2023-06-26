@@ -52,7 +52,7 @@ object-position: center;">
 
 <!-- ======= Offcanvas Sidebar ======= -->
 
-<div class="offcanvas offcanvas-start d-flex flex-column" style="background: #4d636f;" id="sidebarprofile-offcanvas">
+<div class="offcanvas offcanvas-start d-flex flex-column" id="sidebarprofile-offcanvas">
 
   <!-- ======= profile1 ======= -->
 @php
@@ -66,14 +66,14 @@ $p = 0;
 @if ($p++ < 2)
 
   <div class="profile">
-    <img src="/img/{{$row->Photo}}" alt="" class="mt-4 profile-image" style=" vertical-align: middle;
+    <img src="/img/{{$row->Photo}}" alt="" class="mt-4 profile-image mx-auto d-block" style=" vertical-align: middle;
 width: 180px;
 height: 180px;
 border-radius: 50%;
 object-fit: cover;
 object-position: center;">
 
-    <h1 class="text-light mb-3"><a href="/gutachter/{{$row->LastName}}">{{$row->FirstName}} {{$row->LastName}}</a></h1>
+    <h1 class="text-light text-center mb-3"><a href="/gutachter/{{$row->LastName}}">{{$row->FirstName}} {{$row->LastName}}</a></h1>
     <p class="text-light text-center mb-0">{{$row->Phone}}</p>
     <p class="text-light text-center">{{$row->Email}}</p>
   </div>
@@ -85,13 +85,13 @@ object-position: center;">
 @endisset
 @endisset
 <div class="profile mt-4">
-    <img src="/img/logo.png" alt="" class="mt-2" style="vertical-align: middle;
+    <img src="/img/logo.png" alt="" class="mt-2 mx-auto d-block" style="vertical-align: middle;
 width: 120px;
 height: 120px;
 border-style:none;
 object-fit: cover;
 object-position: center;">
-    <h1 class="text-light mb-3"><a href="index.html">Hauptstelle Baucampus</a></h1>
+    <h1 class="text-light text-center mb-3"><a href="index.html">Hauptstelle Baucampus</a></h1>
     <p class="text-light text-center mb-0">Telefon: 05722 913800</p>
     <p class="text-light text-center">kontakt@baucampus.de</p>
   </div>
