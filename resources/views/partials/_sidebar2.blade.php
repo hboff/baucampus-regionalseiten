@@ -15,7 +15,7 @@ $p = 0;
 @if ($p++ < 2)
 
   <div class="profile">
-    <img src="/img/{{$row->Photo}}" alt="" class="mt-4" style="    vertical-align: middle;
+    <img src="/img/{{$row->Photo}}" alt="" class="mt-4" style=" vertical-align: middle;
 width: 180px;
 height: 180px;
 border-radius: 50%;
@@ -35,7 +35,7 @@ object-position: center;">
 @endisset
 
   <div class="profile mt-4">
-    <img src="/img/logo.png" alt="" class="mt-2" style="    vertical-align: middle;
+    <img src="/img/logo.png" alt="" class="mt-2" style="vertical-align: middle;
 width: 120px;
 height: 120px;
 border-style:none;
@@ -52,7 +52,7 @@ object-position: center;">
 
 <!-- ======= Offcanvas Sidebar ======= -->
 
-<div class="offcanvas offcanvas-start d-flex flex-column" style="background: #4d636f;" id="sidebarprofile-offcanvas">
+<div class="offcanvas offcanvas-start d-flex flex-column" id="sidebarprofile-offcanvas">
 
   <!-- ======= profile1 ======= -->
 @php
@@ -66,7 +66,12 @@ $p = 0;
 @if ($p++ < 2)
 
   <div class="profile">
-    <img src="/img/{{$row->Photo}}" alt="" class="mt-4 profile-image">
+    <img src="/img/{{$row->Photo}}" alt="" class="mt-4 profile-image" style=" vertical-align: middle;
+width: 180px;
+height: 180px;
+border-radius: 50%;
+object-fit: cover;
+object-position: center;">>
 
     <h1 class="text-light mb-3"><a href="/gutachter/{{$row->LastName}}">{{$row->FirstName}} {{$row->LastName}}</a></h1>
     <p class="text-light text-center mb-0">{{$row->Phone}}</p>
