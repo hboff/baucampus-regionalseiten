@@ -84,6 +84,7 @@ object-position: center;">
 @endforeach
 @endisset
 @endisset
+@if($p < 2)
 <div class="profile mt-4">
     <img src="/img/logo.png" alt="" class="mt-2 mx-auto d-block" style="vertical-align: middle;
 width: 120px;
@@ -95,5 +96,6 @@ object-position: center;">
     <p class="text-light text-center mb-0">Telefon: 05722 913800</p>
     <p class="text-light text-center">kontakt@baucampus.de</p>
   </div>
+  @endif
 </div>
 </div>
