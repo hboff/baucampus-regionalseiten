@@ -2,7 +2,8 @@
 <header id="header">
 
 <!-- ======= Header ======= -->
-<div class="d-flex flex-column" id="sidebarprofile">
+<div class="offcanvas offcanvas-start d-none d-md-flex flex-column" id="sidebarprofile">
+  <div class="offcanvas-body">
   <!-- ======= profile1 ======= -->
 @php
 $p = 0;
@@ -45,5 +46,6 @@ object-position: center;">
     <p class="text-light text-center mb-0">Telefon: 05722 913800</p>
     <p class="text-light text-center">kontakt@baucampus.de</p>
   </div>
+</div>
 </div>
 </header><!-- End Header -->
