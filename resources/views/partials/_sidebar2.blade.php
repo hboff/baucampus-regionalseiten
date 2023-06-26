@@ -53,7 +53,7 @@ object-position: center;">
 <!-- ======= Offcanvas Sidebar ======= -->
 
 <div class="offcanvas offcanvas-start d-flex flex-column" style="background: #4d636f;" id="sidebarprofile-offcanvas">
-
+<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   <!-- ======= profile1 ======= -->
 @php
 $p = 0;
