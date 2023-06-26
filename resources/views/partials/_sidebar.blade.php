@@ -2,7 +2,7 @@
 <header id="header">
 
 <!-- ======= Header ======= -->
-<div class="d-flex flex-column" id="sidebarprofile">
+<div class="offcanvas-body d-flex flex-column" id="sidebarprofile">
   <!-- ======= profile1 ======= -->
 @php
 $p = 0;
