@@ -52,7 +52,7 @@ object-position: center;">
 
 <!-- ======= Offcanvas Sidebar ======= -->
 
-<div class="offcanvas offcanvas-start d-flex flex-column" id="sidebarprofile-offcanvas">
+<div class="offcanvas offcanvas-start d-flex flex-column" style="background: #4d636f;" id="sidebarprofile-offcanvas">
 
   <!-- ======= profile1 ======= -->
 @php
@@ -73,7 +73,7 @@ border-radius: 50%;
 object-fit: cover;
 object-position: center;">
 
-    <h1 class="text-light text-center mb-3"><a href="/gutachter/{{$row->LastName}}">{{$row->FirstName}} {{$row->LastName}}</a></h1>
+    <h1 class="text-light text-center mb-3"><a href="/gutachter/{{$row->LastName}}" style="text-decorations: none">{{$row->FirstName}} {{$row->LastName}}</a></h1>
     <p class="text-light text-center mb-0">{{$row->Phone}}</p>
     <p class="text-light text-center">{{$row->Email}}</p>
   </div>
