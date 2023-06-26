@@ -117,7 +117,17 @@ h6 {
 }
 
 #sidebarprofile-offcanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 350px;
+    transition: all ease-in-out 0.5s;
+    z-index: 5;
+    transition: all 0.5s;
+    padding-top: 50px;
     background: #4d636f;
+    overflow-y: auto;
 }
 
 #sidebarprofile-offcanvas .profile img {
