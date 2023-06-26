@@ -53,7 +53,7 @@ object-position: center;">
 
 
 <!-- ======= Header ======= -->
-<div class="offcanvas offcanvas-start d-flex flex-column" id="sidebarprofile-offcanvas">
+<div class="offcanvas offcanvas-start d-flex flex-column" style="background: #4d636f;" id="sidebarprofile-offcanvas">
 
   <!-- ======= profile1 ======= -->
 @php
@@ -87,7 +87,7 @@ object-position: center;">
 @endisset
 
   <div class="profile mt-4">
-    <img src="/img/logo.png" alt="" class="mt-2" style="    vertical-align: middle;
+    <img src="/img/logo.png" alt="" class="mt-2" style="vertical-align: middle;
 width: 120px;
 height: 120px;
 border-style:none;
