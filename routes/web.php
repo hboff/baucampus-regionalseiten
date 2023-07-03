@@ -327,7 +327,7 @@ $domains = [
     'baugutachter-hildesheim.com' => [
         'laengengrad' => [9.4, 10.39],
         'breitengrad' => [51.6, 52.25],
-        'domainort' => 'Hildeshiem',
+        'domainort' => 'Hildesheim',
     ],
     'baugutachter-kassel.com' => [
         'laengengrad' => [9.0, 9.72],
