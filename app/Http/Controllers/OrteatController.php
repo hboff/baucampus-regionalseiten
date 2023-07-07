@@ -20,7 +20,7 @@ class OrteatController extends Controller
                 'breitengrad' => [54.74, 55.07],
                 'domainort' => 'Sylt',
             ],
-            'baugutachter-eisenach.com ' => [
+            'baugutachter-eisenach.com' => [
                 'laengengrad' => [10.10, 11.25],
                 'breitengrad' => [50.04, 51.15],
                 'domainort' => 'Eisenach',
